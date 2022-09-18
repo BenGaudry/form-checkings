@@ -1,1 +1,1 @@
-export declare function TestPassword(input: HTMLInputElement): void;
+export declare function TestPassword(input: HTMLInputElement): boolean;

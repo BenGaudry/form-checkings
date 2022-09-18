@@ -1,3 +1,3 @@
-export function TestPassword (input:HTMLInputElement) {
-  console.log('password', input)
+export function TestPassword (input:HTMLInputElement):boolean {
+  return true
 }

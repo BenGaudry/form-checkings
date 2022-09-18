@@ -1,7 +1,17 @@
-import { SubmitBtn } from "./HandleInput";
+var submitBtn:HTMLInputElement
+var inputs
+var form:HTMLFormElement
 
-console.log(SubmitBtn.get())
+export function DefineForm(f:HTMLFormElement) {
+  form = f
+  inputs = form.getElementsByTagName("input");
+}
 
-export function HandleSubmitBtn(btnActive:boolean) {
-  SubmitBtn.disabled = btnActive
+export function DefineSubmitBtn(btn:HTMLInputElement) {
+  submitBtn = btn
+}
+
+export function HandleSubmitBtn(val:boolean) {
+  let disabled = (val === true) ? false : true
+  submitBtn.disabled = disabled
 }

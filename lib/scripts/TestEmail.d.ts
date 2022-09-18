@@ -1,1 +1,1 @@
-export declare function TestEmail(input: HTMLInputElement): void;
+export declare function TestEmail(input: HTMLInputElement): boolean;

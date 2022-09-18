@@ -1,37 +1,41 @@
+import { DefineSubmitBtn, HandleSubmitBtn } from "./HandleSubmitBtn";
 import { TestEmail } from "./TestEmail";
 import { TestPassword } from "./TestPassword";
 
 export function HandleInput(form: HTMLFormElement) {
   const inputs = form.getElementsByTagName("input");
-  for (let i = 0; i <= inputs.length; i++) {
+
+  // Compte le nombre d'inputs valides pour pouvoir
+  // comparer ensuite avec le nombre total d'inputs
+  var counter:number = 0
+  const nbInputs = inputs.length
+
+  for (let i = 1; i <= nbInputs; i++) {
+
     const input = inputs[i];
-    let inputType:string = input.type
-    switch (inputType) {
-      case "email":
-        TestEmail(input);
-        break;
+    let t = input.type
 
-      case "password":
-        TestPassword(input);
-        break;
-
-      case "submit":
-        new SubmitBtn(input);
+    var result:number
+    
+    if(t === "email") {
+      result = (TestEmail(input)) ? 1 : 0
+    } else if (t === "password") {
+      result = (TestPassword(input)) ? 1 : 0
+    } else if (t === "submit") {
+      result = 1
+      DefineSubmitBtn(input)
+    } else {
+      result = 1
     }
+    // On augmente le compteur si l'input est vérifié
+    counter = counter + result
+    let score = counter + " / " + nbInputs
+    console.log(score)
   }
-}
-
-
-export class SubmitBtn {
-
-  button:HTMLInputElement
-
-  constructor(btn:HTMLInputElement) {
-    this.button = btn
-  }
-
-  get() {
-    return this.button
-  }
+    
+  // Fin de la boucle
+  let enableBtn = (counter === nbInputs) ? true : false
+  console.log(enableBtn)
+  HandleSubmitBtn(enableBtn)
 
 }
