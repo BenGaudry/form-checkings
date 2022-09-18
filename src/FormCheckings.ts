@@ -1,9 +1,5 @@
-export const FormCheckings = () => {
+export function FormCheckings(form:HTMLFormElement) {
 
-  return [
-    {
-      "true": true
-    }
-  ]
+  
 
 }

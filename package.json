@@ -4,7 +4,9 @@
   "description": "Module to check the inputs of a form before submitting",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +22,8 @@
   "homepage": "https://github.com/BenGaudry/form-checkings#readme",
   "devDependencies": {
     "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "form-checkings": "^0.0.1"
   }
 }
