@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/BenGaudry/form-checkings/issues"
   },
-  "homepage": "https://github.com/BenGaudry/form-checkings#readme"
+  "homepage": "https://github.com/BenGaudry/form-checkings#readme",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
 }
