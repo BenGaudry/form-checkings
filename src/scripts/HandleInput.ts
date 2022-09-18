@@ -10,8 +10,7 @@ export function HandleInput(form: HTMLFormElement) {
   var counter:number = 0
   const nbInputs = inputs.length
 
-  for (let i = 1; i <= nbInputs; i++) {
-
+  for (let i = 0; i < nbInputs; i++) {
     const input = inputs[i];
     let t = input.type
 
@@ -29,13 +28,9 @@ export function HandleInput(form: HTMLFormElement) {
     }
     // On augmente le compteur si l'input est vérifié
     counter = counter + result
-    let score = counter + " / " + nbInputs
-    console.log(score)
   }
-    
   // Fin de la boucle
   let enableBtn = (counter === nbInputs) ? true : false
-  console.log(enableBtn)
   HandleSubmitBtn(enableBtn)
 
 }

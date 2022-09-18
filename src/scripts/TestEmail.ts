@@ -1,4 +1,3 @@
-import { HandleSubmitBtn } from "./HandleSubmitBtn"
 import { IsEmpty } from "./IsEmpty";
 
 export function TestEmail(input:HTMLInputElement):boolean {
@@ -7,7 +6,7 @@ export function TestEmail(input:HTMLInputElement):boolean {
     let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
     let result = (val.match(emailRegex)) ? true : false
 
-    return true
+    return result
   }
 
   return false
