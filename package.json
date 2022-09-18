@@ -1,6 +1,6 @@
 {
   "name": "form-checkings",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Module to check the inputs of a form before submitting",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
