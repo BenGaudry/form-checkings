@@ -1,3 +1,2 @@
-import { FormCheckings } from "./FormCheckings";7
-
+import { FormCheckings } from "./FormCheckings";
 export { FormCheckings }

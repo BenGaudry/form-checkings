@@ -1,3 +1,1 @@
-export declare const FormCheckings: () => {
-    true: boolean;
-}[];
+export declare function FormCheckings(form: HTMLFormElement): void;
