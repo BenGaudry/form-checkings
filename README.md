@@ -14,7 +14,12 @@ or
 Then, you only need to write a few lines of html & javascript to include it :
 
 ```html
-<form id=«check-this-form»>`
+<form id=«check-this-form»>
+  <input type="email" />
+  <input type="submit" value="Valider" />
+</form>
+
+<script src="./app.js"></script>
 ```
 
 ```javascript
