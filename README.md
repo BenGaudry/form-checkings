@@ -33,4 +33,8 @@ include { FormCheckings } from 'form-checkings'
 FormCheckings(document.getElementById('check-this-form'))
 ```
 
----
+## Currently supported features :
+- Checking email
+- Checking password
+   - getPasswordStrength():float
+
