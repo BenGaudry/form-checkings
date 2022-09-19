@@ -33,8 +33,21 @@ include { FormCheckings } from 'form-checkings'
 FormCheckings(document.getElementById('check-this-form'))
 ```
 
-## Currently supported features :
+## Features
+### Currently supported features :
 - Checking email
 - Checking password
-   - getPasswordStrength():float
 
+### In building features :
+- Getters
+   - getPasswordStrength():float
+   - getLog():string
+
+## Contributing to project
+### Reporting an issue 
+
+To fix an issue that you may have found in the library, please consider reporting it in the [issues section](https://github.com/BenGaudry/form-checkings/issues)
+
+### Pull request
+
+Pull requests are not taken in charge yet but it will be implemented in a close future
