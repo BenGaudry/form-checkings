@@ -13,7 +13,6 @@ or
 
 Then, you only need to write a few lines of html & javascript to include it :
 
----
 
 ```html
 <!-- index.html -->
