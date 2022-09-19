@@ -13,16 +13,24 @@ or
 
 Then, you only need to write a few lines of html & javascript to include it :
 
+---
+
 ```html
-<form id=«check-this-form»>
+<!-- index.html -->
+<form id="check-this-form">
   <input type="email" />
   <input type="submit" value="Valider" />
 </form>
 
-<script src="./app.js"></script>
+<script src="./app.js" type="module"></script>
 ```
 
+---
+
 ```javascript
-include { FormCheckings } from ‘form-checkings’
-FormCheckings(document.getElementById(‘check-this-form’))
+// app.js
+include { FormCheckings } from 'form-checkings'
+FormCheckings(document.getElementById('check-this-form'))
 ```
+
+---
