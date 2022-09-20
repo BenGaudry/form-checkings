@@ -2,6 +2,10 @@
 ## What is Form Checkings ?
 Form checkings is a javascript library written in typescript that do all the verification on inputs before submitting it, so you don’t have to code it yourself.
 
+## Useful Links
+- [npm](https://www.npmjs.com/package/form-checkings)
+- [yarn](https://yarnpkg.com/package/form-checkings)
+
 ## How can I add it to my project ?
 You can use the node package manager with this command : 
 
